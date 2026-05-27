@@ -116,7 +116,7 @@ button { cursor: pointer; font-family: var(--font-body); border: none; backgroun
 
 /* 5. BACK TO TOP */
 #backToTop {
-  position: fixed; bottom: 6rem; right: 1.5rem; width: 42px; height: 42px;
+  position: fixed; bottom: 6rem; left: 1.5rem; width: 42px; height: 42px;
   border-radius: 50%; background: var(--white); color: var(--charcoal);
   box-shadow: var(--shadow-md); font-size: 1.1rem; z-index: 500;
   opacity: 0; pointer-events: none; transition: var(--transition);
