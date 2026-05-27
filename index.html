@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranjal Enterprises – Premium Real Estate, CBD Belapur</title>
+  <meta name="description" content="Trusted real estate consultancy in CBD Belapur, Navi Mumbai. Residential, commercial, and rental properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Spinner -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-logo">PE</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top" title="Back to top">&#8593;</button>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919999999999" class="float-btn whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp us">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.524 5.847L.057 23.928l6.235-1.635A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.815 9.815 0 01-5.007-1.371l-.36-.213-3.7.971.988-3.607-.234-.371A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+  </a>
+
+  <!-- Floating Call -->
+  <a href="tel:+919999999999" class="float-btn call" aria-label="Call us">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01z"/></svg>
+  </a>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Pranjal <span>Enterprises</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#properties" class="nav-link">Properties</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&auto=format&fit=crop&q=80" alt="Luxury residential building in Navi Mumbai" loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">CBD Belapur · Navi Mumbai</p>
+      <h1 class="hero-heading reveal">Find Your Perfect<br /><em>Space in Navi Mumbai</em></h1>
+      <p class="hero-sub reveal">Trusted Real Estate Consultancy in CBD Belapur</p>
+      <div class="hero-ctas reveal">
+        <a href="#contact" class="btn btn-gold">Contact Us</a>
+        <a href="#properties" class="btn btn-outline">View Properties</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span></span>Scroll
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section id="stats" aria-label="Statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card fade-up">
+          <span class="stat-num" data-target="120">0</span><span class="stat-plus">+</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-card fade-up" style="animation-delay:.1s">
+          <span class="stat-num" data-target="45">0</span><span class="stat-plus">+</span>
+          <p>Properties Listed</p>
+        </div>
+        <div class="stat-card fade-up" style="animation-delay:.2s">
+          <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-label fade-up">About Us</div>
+      <h2 id="about-heading" class="section-title fade-up">Navi Mumbai's Premier<br /><em>Real Estate Partner</em></h2>
+      <p class="section-sub fade-up">For over eight years, Pranjal Enterprises has helped families and businesses find their ideal spaces across CBD Belapur and the wider Navi Mumbai region. We combine deep local knowledge with a personal approach.</p>
+      <div class="about-cards">
+        <div class="about-card fade-up">
+          <div class="about-icon">🏠</div>
+          <h3>Residential Properties</h3>
+          <p>Premium flats, row houses, and gated communities tailored to your lifestyle and budget.</p>
+        </div>
+        <div class="about-card fade-up" style="animation-delay:.1s">
+          <div class="about-icon">🏢</div>
+          <h3>Commercial Spaces</h3>
+          <p>Strategic office spaces, retail units, and co-working hubs across Navi Mumbai's business districts.</p>
+        </div>
+        <div class="about-card fade-up" style="animation-delay:.2s">
+          <div class="about-icon">🔑</div>
+          <h3>Rental Assistance</h3>
+          <p>End-to-end rental support — from property shortlisting to agreement signing.</p>
+        </div>
+        <div class="about-card fade-up" style="animation-delay:.3s">
+          <div class="about-icon">📍</div>
+          <h3>Local Expertise</h3>
+          <p>Deep-rooted knowledge of Belapur, Kharghar, Vashi, Nerul and surrounding micro-markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTIES SECTION -->
+  <section id="properties" aria-labelledby="properties-heading">
+    <div class="container">
+      <div class="section-label fade-up">Featured Properties</div>
+      <h2 id="properties-heading" class="section-title fade-up">Curated Listings<br /><em>Just for You</em></h2>
+      <!-- Filter -->
+      <div class="filter-bar fade-up" role="group" aria-label="Property type filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="buy">Buy</button>
+        <button class="filter-btn" data-filter="rent">Rent</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+      <div class="properties-grid" id="propertiesGrid">
+
+        <article class="prop-card fade-up" data-type="buy">
+          <div class="prop-img-wrap">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=75" alt="One Palm – CBD Belapur" loading="lazy" />
+            <span class="prop-badge">Buy</span>
+          </div>
+          <div class="prop-body">
+            <h3>One Palm</h3>
+            <p class="prop-loc">📍 CBD Belapur, Sector 11</p>
+            <p class="prop-desc">Elegant 2 &amp; 3 BHK residences with panoramic city views and world-class amenities.</p>
+            <div class="prop-footer">
+              <span class="prop-price">₹85L – ₹1.4Cr</span>
+              <button class="btn btn-sm btn-gold enquire-btn" onclick="openEnquiry('One Palm')">Enquire Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up" data-type="buy" style="animation-delay:.07s">
+          <div class="prop-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=75" alt="Sai Platinum – Belapur" loading="lazy" />
+            <span class="prop-badge">Buy</span>
+          </div>
+          <div class="prop-body">
+            <h3>Sai Platinum</h3>
+            <p class="prop-loc">📍 Belapur, Sector 7</p>
+            <p class="prop-desc">Premium 1, 2 &amp; 3 BHK apartments with modern finishes and lush green surroundings.</p>
+            <div class="prop-footer">
+              <span class="prop-price">₹62L – ₹1.1Cr</span>
+              <button class="btn btn-sm btn-gold enquire-btn" onclick="openEnquiry('Sai Platinum')">Enquire Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up" data-type="rent" style="animation-delay:.14s">
+          <div class="prop-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=75" alt="Belapur Heights" loading="lazy" />
+            <span class="prop-badge rent">Rent</span>
+          </div>
+          <div class="prop-body">
+            <h3>Belapur Heights</h3>
+            <p class="prop-loc">📍 CBD Belapur, Sector 15</p>
+            <p class="prop-desc">Spacious 2 BHK rentals with excellent connectivity to Belapur station and Expressway.</p>
+            <div class="prop-footer">
+              <span class="prop-price">₹22K – ₹38K/mo</span>
+              <button class="btn btn-sm btn-gold enquire-btn" onclick="openEnquiry('Belapur Heights')">Enquire Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up" data-type="buy" style="animation-delay:.21s">
+          <div class="prop-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&auto=format&fit=crop&q=75" alt="Galaxy Residency" loading="lazy" />
+            <span class="prop-badge">Buy</span>
+          </div>
+          <div class="prop-body">
+            <h3>Galaxy Residency</h3>
+            <p class="prop-loc">📍 Kharghar, Sector 20</p>
+            <p class="prop-desc">Gated township living with clubhouse, swimming pool, and 3 BHK luxury suites.</p>
+            <div class="prop-footer">
+              <span class="prop-price">₹1.1Cr – ₹1.8Cr</span>
+              <button class="btn btn-sm btn-gold enquire-btn" onclick="openEnquiry('Galaxy Residency')">Enquire Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up" data-type="commercial" style="animation-delay:.28s">
+          <div class="prop-img-wrap">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&auto=format&fit=crop&q=75" alt="Fortune Towers – Commercial" loading="lazy" />
+            <span class="prop-badge commercial">Commercial</span>
+          </div>
+          <div class="prop-body">
+            <h3>Fortune Towers</h3>
+            <p class="prop-loc">📍 CBD Belapur, Plot 12</p>
+            <p class="prop-desc">Grade-A commercial offices and retail spaces in Belapur's prime business corridor.</p>
+            <div class="prop-footer">
+              <span class="prop-price">₹95L – ₹3.2Cr</span>
+              <button class="btn btn-sm btn-gold enquire-btn" onclick="openEnquiry('Fortune Towers')">Enquire Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up" data-type="rent" style="animation-delay:.35s">
+          <div class="prop-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=75" alt="Emerald Bay – Nerul" loading="lazy" />
+            <span class="prop-badge rent">Rent</span>
+          </div>
+          <div class="prop-body">
+            <h3>Emerald Bay</h3>
+            <p class="prop-loc">📍 Nerul, Sector 4</p>
+            <p class="prop-desc">Sea-facing luxury rentals with private balconies and a resort-style living experience.</p>
+            <div class="prop-footer">
+              <span class="prop-price">₹35K – ₹65K/mo</span>
+              <button class="btn btn-sm btn-gold enquire-btn" onclick="openEnquiry('Emerald Bay')">Enquire Now</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-label fade-up">What We Offer</div>
+      <h2 id="services-heading" class="section-title fade-up">Our <em>Services</em></h2>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">🏡</div>
+          <h3>Property Buying</h3>
+          <p>Expert guidance from shortlisting to registration — we simplify your home-buying journey.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay:.07s">
+          <div class="service-icon">🔑</div>
+          <h3>Rental Assistance</h3>
+          <p>Hassle-free rentals with verified landlords, fair agreements, and quick possession.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay:.14s">
+          <div class="service-icon">🏢</div>
+          <h3>Commercial Offices</h3>
+          <p>Find the ideal office space to grow your business in Navi Mumbai's key micro-markets.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay:.21s">
+          <div class="service-icon">💼</div>
+          <h3>Property Consultation</h3>
+          <p>Free market analysis and investment advice to help you make confident decisions.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay:.28s">
+          <div class="service-icon">📄</div>
+          <h3>Documentation Support</h3>
+          <p>End-to-end legal and documentation assistance — agreements, registration, and more.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay:.35s">
+          <div class="service-icon">🚗</div>
+          <h3>Site Visits</h3>
+          <p>Organised site visits at your convenience. We accompany you every step of the way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-label fade-up">Client Stories</div>
+      <h2 id="testimonials-heading" class="section-title fade-up">Happy <em>Customers</em></h2>
+      <div class="testimonials-track-wrap">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"Pranjal Enterprises made my first home purchase incredibly smooth. They understood my budget, showed me the right options, and handled all the paperwork. Couldn't be happier!"</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/80?img=12" alt="Rahul Sharma" loading="lazy" />
+              <div>
+                <strong>Rahul Sharma</strong>
+                <span>Homeowner · CBD Belapur</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"We needed a commercial space urgently. The team at Pranjal Enterprises found us exactly what we needed within a week. Professional, prompt, and truly reliable."</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/80?img=47" alt="Neha Kulkarni" loading="lazy" />
+              <div>
+                <strong>Neha Kulkarni</strong>
+                <span>Business Owner · Kharghar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"Relocated from Pune and was overwhelmed by the options. Their team gave me a personalised tour of multiple properties and helped me finalise the perfect 2 BHK rental."</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/80?img=33" alt="Amit Desai" loading="lazy" />
+              <div>
+                <strong>Amit Desai</strong>
+                <span>IT Professional · Nerul</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="testi-dots" id="testiDots" aria-label="Testimonial navigation">
+          <button class="testi-dot active" data-index="0" aria-label="Testimonial 1"></button>
+          <button class="testi-dot" data-index="1" aria-label="Testimonial 2"></button>
+          <button class="testi-dot" data-index="2" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION SECTION -->
+  <section id="location" aria-labelledby="location-heading">
+    <div class="container">
+      <div class="section-label fade-up">Find Us</div>
+      <h2 id="location-heading" class="section-title fade-up">Our <em>Location</em></h2>
+      <div class="location-wrap fade-up">
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15088.648394891735!2d73.02697!3d19.02254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b7f5a1e123%3A0x0!2sCBD+Belapur%2C+Navi+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Pranjal Enterprises location map">
+          </iframe>
+        </div>
+        <div class="location-card">
+          <div class="loc-row">
+            <span class="loc-icon">📍</span>
+            <div>
+              <strong>Office Address</strong>
+              <p>Pranjal Enterprises, CBD Belapur,<br />Navi Mumbai – 400614, Maharashtra</p>
+            </div>
+          </div>
+          <div class="loc-row">
+            <span class="loc-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+            </div>
+          </div>
+          <div class="loc-row">
+            <span class="loc-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:info@pranjalenterprises.in">info@pranjalenterprises.in</a></p>
+            </div>
+          </div>
+          <div class="loc-row">
+            <span class="loc-icon">🕐</span>
+            <div>
+              <strong>Office Hours</strong>
+              <p>Mon – Sat: 9:00 AM – 7:00 PM<br />Sunday: 10:00 AM – 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-label fade-up">Get in Touch</div>
+      <h2 id="contact-heading" class="section-title fade-up">Let's Find Your<br /><em>Dream Property</em></h2>
+      <div class="contact-wrap fade-up">
+        <div class="contact-text">
+          <p>Whether you're buying, renting, or investing — our team is here to guide you with honest advice and local expertise.</p>
+          <ul class="contact-features">
+            <li>✓ Free initial consultation</li>
+            <li>✓ No hidden charges</li>
+            <li>✓ Verified property listings</li>
+            <li>✓ Quick response guaranteed</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="I'm looking for a 2 BHK in Belapur..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-full">Send Message</button>
+          <p class="form-success" id="formSuccess" aria-live="polite">✓ Thank you! We'll be in touch shortly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-logo">Pranjal <span>Enterprises</span></p>
+          <p class="footer-tagline">Premium Real Estate Consultancy<br />CBD Belapur, Navi Mumbai</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://wa.me/919999999999" aria-label="WhatsApp" rel="noopener" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.524 5.847L.057 23.928l6.235-1.635A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.815 9.815 0 01-5.007-1.371l-.36-.213-3.7.971.988-3.607-.234-.371A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Property Types</h4>
+          <ul>
+            <li><a href="#properties">Residential Buy</a></li>
+            <li><a href="#properties">Residential Rent</a></li>
+            <li><a href="#properties">Commercial Spaces</a></li>
+            <li><a href="#services">Consultation</a></li>
+            <li><a href="#services">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+            <li><a href="mailto:info@pranjalenterprises.in">info@pranjalenterprises.in</a></li>
+            <li>CBD Belapur, Navi Mumbai</li>
+            <li>Mon–Sat: 9AM–7PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pranjal Enterprises. All rights reserved.</p>
+        <p>Crafted with ♥ in Navi Mumbai</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enquiry Modal -->
+  <div id="enquiryModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <h3 id="modalTitle">Enquire About <span id="modalProp"></span></h3>
+      <p>Leave your details and we'll call you back within 2 hours.</p>
+      <form id="enquiryForm" novalidate>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="+91 Phone Number" required />
+        </div>
+        <button type="submit" class="btn btn-gold btn-full">Request Callback</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-mobile-cta" id="stickyMobileCTA" aria-hidden="true">
+    <a href="tel:+919999999999" class="btn btn-gold">📞 Call Now</a>
+    <a href="#contact" class="btn btn-outline">Get Free Advice</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
