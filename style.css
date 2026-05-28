@@ -465,16 +465,36 @@ button { cursor: pointer; font-family: var(--font-body); border: none; backgroun
 .sticky-mobile-cta .btn { flex: 1; padding: .75rem 1rem; font-size: .88rem; }
 
 /* 19. HAMBURGER DROPDOWN (MOBILE) */
+
+/* Full-screen dim overlay behind the slide-in panel */
+.nav-overlay {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 798;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.nav-overlay.open { opacity: 1; }
+
 @media (max-width: 768px) {
+  .nav-overlay { display: block; pointer-events: none; }
+  .nav-overlay.open { pointer-events: all; }
+
   .hamburger { display: flex; }
   .nav-links {
-    position: fixed; inset: 0 0 0 auto; width: min(80vw, 300px);
-    background: var(--white); flex-direction: column; align-items: flex-start;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: auto;
+    width: min(80vw, 300px);
+    background: var(--white);
+    flex-direction: column; align-items: flex-start;
     padding: 5rem 2rem 2rem; gap: 1.5rem;
     transform: translateX(100%); transition: transform .35s ease;
-    box-shadow: -10px 0 40px rgba(0,0,0,.08); z-index: 799;
+    box-shadow: -10px 0 40px rgba(0,0,0,.12);
+    z-index: 799;           /* above overlay (798), below loader (9999) */
+    overflow-y: auto;
   }
-  .nav-links.open { transform: none; }
+  .nav-links.open { transform: translateX(0); }
   .nav-link { color: var(--charcoal); font-size: 1rem; }
   .float-btn.whatsapp { bottom: 9rem; }
   .float-btn.call      { bottom: 6rem; }
